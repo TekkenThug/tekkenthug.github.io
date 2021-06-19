@@ -1,5 +1,5 @@
 <template>
-  <button @click="$emit('click')" class="btn">
+  <button @click="action ? action() : null" class="btn">
     <span class="btn__icon" v-if="img">
       <img :src="img" alt="">
     </span>
@@ -21,7 +21,8 @@ export default {
     img: {
       type: String,
       default: null
-    }
+    },
+    action: null
   }
 }
 </script>

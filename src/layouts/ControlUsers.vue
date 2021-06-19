@@ -12,7 +12,7 @@
                    :context-content="config.tableData.usersAction"
       />
     </div>
-    <btn class="users__add" :text="config.btnText" />
+    <btn class="users__add" :action="config.btn.action" :text="config.btn.text" />
   </div>
 </template>
 

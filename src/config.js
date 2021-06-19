@@ -36,10 +36,12 @@ export default {
      *  @property {array} sidebar.userThumb.options - Массив с ссылками
      *  @property {string} sidebar.userThumb.options.img - Путь до иконки
      *  @property {string} sidebar.userThumb.options.text - Текст в ссылке
+     *  @property {function} sidebar.userThumb.options.action - Обработчик
      *
      *  @property {object} sidebar.componentBtn - Кнопка компонент
      *  @property {string} sidebar.componentBtn.icon - Иконка кнопки
      *  @property {string} sidebar.componentBtn.text - Текст кнопки
+     *  @property {function} sidebar.componentBtn.action - Обработчик
      */
     sidebar: {
         menuContent: [
@@ -59,21 +61,25 @@ export default {
             options: [
                 {
                     img: 'static/images/icons/settings.svg',
-                    text: 'Основные настройки'
+                    text: 'Основные настройки',
+                    action: () => { console.log('settings') }
                 },
                 {
                     img: 'static/images/icons/menu.svg',
-                    text: 'Настроить меню'
+                    text: 'Настроить меню',
+                    action: () => { console.log('menu') }
                 },
                 {
                     img: 'static/images/icons/alert-triangle.svg',
-                    text: 'Сообщить о проблеме'
+                    text: 'Сообщить о проблеме',
+                    action: () => { console.log('problem') }
                 }
             ]
         },
         componentBtn: {
             text: "Библиотека компонентов",
-            icon: "static/images/icons/layers.svg"
+            icon: "static/images/icons/layers.svg",
+            action: () => { console.log('library') }
         }
     },
 
@@ -95,7 +101,9 @@ export default {
      * @property {array} controlUsers.tableData.usersAction - Действия с пользователем
      * @property {string} controlUsers.tableData.usersAction.text - Подпись для действия
      *
-     * @property {string} controlUsers.btnText - Кнопка
+     * @property {object} controlUsers.btn - Кнопка
+     * @property {string} controlUsers.btn.title - Подпись
+     * @property {function} controlUsers.btn.action - Действие по кнопке
      */
     controlUsers: {
         page: {
@@ -143,18 +151,21 @@ export default {
             usersAction: [
                 {
                     text: 'Удалить',
-                    action: 'delete'
+                    action() { console.log('delete') }
                 },
                 {
                     text: 'Редактировать',
-                    action: 'edit'
+                    action: () => { console.log('edit') }
                 },
                 {
                     text: 'Забанить',
-                    action: 'ban'
+                    action: () => { console.log('ban') }
                 }
             ],
         },
-        btnText: "Добавить пользователя"
+        btn: {
+            text: "Добавить пользователя",
+            action() { console.log('user add')}
+        }
     }
 }

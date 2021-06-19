@@ -12,7 +12,11 @@
                         class="sidebar__item" />
       </div>
 
-    <btn :img="sidebar.componentBtn.icon" class="sidebar__component-btn" :text="sidebar.componentBtn.text" />
+    <btn :img="sidebar.componentBtn.icon"
+         class="sidebar__component-btn"
+         :text="sidebar.componentBtn.text"
+         :action="sidebar.componentBtn.action"
+    />
   </div>
 </template>
 

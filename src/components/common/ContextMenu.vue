@@ -1,7 +1,7 @@
 <template>
   <div class="context-menu">
     <ul class="context-menu__list">
-      <li v-for="(link, index) in links" :key="index">
+      <li v-for="(link, index) in links" :key="index"  @click="link.action ? link.action() : ''">
         <a class="link-btn" href="#">
           <span v-if="link.img" class="link-btn__icon"><img :src="link.img" alt=""></span>
           {{ link.text }}
