@@ -5719,7 +5719,6 @@ form#vacance-call select{
 }
 
 .qview__block > * {
-    flex-basis: 48%;
     width: 48%;
 }
 
