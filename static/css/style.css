@@ -5812,6 +5812,10 @@ form#vacance-call select{
   font-size: 14px;
 }
 
+.qview__field-input input {
+  background-color: transparent;
+}
+
 .qview__block .qview__link-btn {
     text-decoration: none;
     transition: all 0.3s ease;
