@@ -873,7 +873,7 @@ $(document).ready(function () {
     });
 
     $("#c-tab-body").click();
-    var $photo_slider = $("#photo_slider, #qview__slider");
+    var $photo_slider = $("#photo_slider");
     var $photo_slide_count = $("#photo_tab .slide_count");
     $photo_slider.on("init reInit afterChange", function (event, slick, currentSlide, nextSlide) {
         var i = (currentSlide ? currentSlide : 0) + 1;

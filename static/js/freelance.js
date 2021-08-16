@@ -157,13 +157,15 @@ $(function () {
     $('.top-container .eye').on('click', function(event) {
         event.preventDefault();
         $('.qview').bPopup();
-    })
+    });
     
     /* Slider for quick view */
-    $('.qview__slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-    })
-    
+    $('#qview__slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: "linear",
+    });
 })
