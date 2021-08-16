@@ -5755,6 +5755,11 @@ form#vacance-call select{
   background-image: url("../images/right-arrow.svg");
 }
 
+.qview__descr {
+  display: flex;
+  flex-direction: column;
+}
+
 .qview__descr .qview__field:nth-child(2n + 1) {
     background-color: #f0f0f0;
 }
@@ -5765,6 +5770,8 @@ form#vacance-call select{
     line-height: 18px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .qview__field--total {
