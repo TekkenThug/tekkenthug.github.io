@@ -161,6 +161,8 @@ $(function () {
     
     /* Slider for quick view */
     $('#qview__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         dots: false,
         arrows: true,
         infinite: true,
