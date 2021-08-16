@@ -5718,6 +5718,7 @@ form#vacance-call select{
 .qview__block {
     display: flex;
     padding: 10px;
+    justify-content: space-between;
 }
 
 .qview__block > * {
@@ -5802,6 +5803,13 @@ form#vacance-call select{
 
 .qview__field-title {
     font-weight: 500;
+}
+
+.qview__field-input {
+  border-radius: 8px;
+  padding: 8px 10px;
+  border: 1px solid #dd393c;
+  font-size: 14px;
 }
 
 .qview__block .qview__link-btn {
