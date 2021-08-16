@@ -5741,6 +5741,7 @@ form#vacance-call select{
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  font-size: 0;
 }
 
 #qview__slider .slick-arrow.slick-prev {
