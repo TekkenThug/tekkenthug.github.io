@@ -5745,12 +5745,12 @@ form#vacance-call select{
 
 #qview__slider .slick-arrow.slick-prev {
   left: 10px;
-  background-image: url("../../left-arrow.svg");
+  background-image: url("../images/left-arrow.svg");
 }
 
 #qview__slider .slick-arrow.slick-next {
   right: 10px;
-  background-image: url("../../right-arrow.svg");
+  background-image: url("../images/right-arrow.svg");
 }
 
 .qview__descr .qview__field:nth-child(2n + 1) {
