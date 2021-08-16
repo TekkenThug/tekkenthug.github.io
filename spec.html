@@ -1,0 +1,2719 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <title> Скидки и Акции в Москве</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+
+    
+        
+        <meta name="robots" content="noindex, nofollow" />
+        
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
+
+   
+   
+        
+   
+
+    
+    
+        <!-- css style -->
+        <link href="static/css/style.css" type="text/css" rel="stylesheet">
+        
+        
+        
+        
+        
+        
+        <!-- jquery -->
+        <script src="/static/js/jquery.min.js"></script>
+       
+
+        
+        <script src="/static/js/device.min.js" defer></script>
+        <script src="/static/js/slick.min.js" defer></script>
+        <script src="/static/js/selecter.min.js" defer></script>
+        <script src="/static/js/bpopup.min.js" defer></script>
+        <script src="/static/js/fancybox.min.js" defer></script>
+        <script src="/static/js/ui-slider.js" defer></script>
+        <script src="/static/js/ui.touch-punch.min.js" defer></script>
+        <script src="/static/js/calculator.js" defer></script>
+        <script src="/static/js/raty.js" defer></script>
+        <script src="/static/js/mask.js" defer></script>
+        <script src="/static/js/favorite.js" defer></script>
+        <script src="/static/js/common.js" defer></script>
+        <script src="/static/js/common-extra.js" defer></script>
+        
+        <script src="/static/js/scroll.js" defer></script>
+        <script src="/static/js/filter.js"></script>
+        <script src="/static/js/blowup.min.js"></script>
+        
+        
+        
+
+    <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark" type="text/javascript"></script>-->
+     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="/static/js/map.js"></script>
+
+      
+       <meta name="yandex-verification" content="a160127c0e8b197c" />
+       <meta name="google-site-verification" content="k3YvNgFMN-slv5wy2lM8ZfDmf1g4FSfs6gGGhtyD5fA" />
+
+        <link href="/static/css/rating.css" type="text/css" rel="stylesheet">
+        <script src="/static/js/rating.js"></script>
+        <script src="static/js/freelance.js"></script>
+</head>
+<body>
+
+<!-- NEW MODAL -->
+<div class="modal-black" id="black-box" onclick="Modal.hide();"></div>
+<div class="modal-wrapper" id="modal-box">
+    <div class="modal-loader" id="modal-loading">
+        <div class="an an-medium">
+            <div class="an-bt"></div>
+            <div class="an-bt"></div>
+            <div class="an-bt"></div>
+        </div>
+        <div class="loader-back"></div>
+    </div>
+
+    <div class="modal-body-wrapper" id="modal-body-wrapper">
+        <div class="modal-header gray">
+            <div class="close-button" onclick="Modal.hide();"></div>
+            <div class="modal-title" id="modal-title"></div>
+        </div>
+        <div class="modal-body" id="modal-body"></div>
+    </div>
+</div>
+
+<!--container-->
+<div class="container">
+<div class="warning">Работали, работаем и будем РАБОТАТЬ ДЛЯ ВАС</div>
+    
+    <!--header-->
+    <div class="header">
+        <div class="wrp">
+            <!--top_line-->
+            <div class="top_line">
+                <!--menu-->
+                <div class="menu">
+                    <ul>
+                    	<li><a href="/">Главная</a></li>
+                        
+                    		<li><a href="/spec">Скидки и Акции</a></li>
+                    	  
+                    		<li><a href="/contacts">Контакты</a></li>
+                    	  
+                    		<li><a href="/about">О компании</a></li>
+                    	  
+                        
+                       <!--
+                        <li><a href="/about">О компании</a></li>
+                        <li><a href="#">Менеджеры</a></li>
+                        <li><a href="/skidki">Скидки и акции</a></li>
+                        <li><a href="/oplata">Оплата</a></li>
+                        <li><a href="/dostavka">Доставка</a></li>
+                        <li><a href="/contacts">Контакты</a></li>
+                        -->
+                        <li><a href="/manager-company">Менеджеры</a></li>
+                        
+                            <li><a href="/vacancy">Вакансии</a></li>
+                        
+                        
+                        <li><a href="/shop/favorite" id="link-favorite">Избранное (<span class="favorite-count">0</span>)</a></li>
+                    </ul>
+                </div>
+                <!--/menu-->
+                
+                <!--cart-->
+                <div class="cart">
+                    <!-- <div class="yes"><a href="#">2 товара</a> <span>на сумму 130</span></div>-->
+                    <div class="not" id="cart-header"><span>В корзине</span> ничего нет :(</div>
+                    <!--drop_cart-->
+                    <div onmouseenter="Cart.show_box();" onmouseleave="Cart.hide_box();" class="drop_cart" id="cart-body" style="width: 1220px;">
+                        <ul>
+                            <li>
+                                <!--pic-->
+                                <div class="pic">
+                                    <img src="/static/temp/car-drop/1.jpg" alt="">
+                                </div>
+                                <!--/pic-->
+                                <!--title-->
+                                <div class="title">
+                                    <a href="#">Воздушно-пузырчатая пленка 1,2x20 м</a>
+                                </div>
+                                <!--/title-->
+                                <!--quantity-->
+                                <div class="quantity">
+                                    <button type="button" class="minus_btn">-</button>
+                                    <input type="text" name="name" value="1 шт">
+                                    <button type="button" class="plus_btn">+</button>
+                                </div>
+                                <!--/quantity-->
+                                <div class="price">150</div>
+                                <!--del-->
+                                <div class="del">
+                                    <a href="#"></a>
+                                </div>
+                                <!--/del-->
+                            </li>
+                            <li>
+                                <!--pic-->
+                                <div class="pic">
+                                    <img src="/static/temp/car-drop/2.jpg" alt="">
+                                </div>
+                                <!--/pic-->
+                                <!--title-->
+                                <div class="title">
+                                    <a href="#">Воздушно-пузырчатая пленка 1,2x20 м</a>
+                                </div>
+                                <!--/title-->
+                                <!--quantity-->
+                                <div class="quantity">
+                                    <button type="button" class="minus_btn">-</button>
+                                    <input type="text" name="name" value="1 шт">
+                                    <button type="button" class="plus_btn">+</button>
+                                </div>
+                                <!--/quantity-->
+                                <div class="price">150</div>
+                                <!--del-->
+                                <div class="del">
+                                    <a href="#"></a>
+                                </div>
+                                <!--/del-->
+                            </li>
+                        </ul>
+                        <!--checkout-->
+                        <div class="checkout">
+                            <a href="/shop/cart">Оформить заказ</a>
+                        </div>
+                        <!--/checkout-->
+                        <!--total-->
+                        <div class="total">
+                            <span>Итого:</span>
+                            <i id="small-full-price">520</i>
+                        </div>
+                        <!--/total-->
+                    </div>
+                    <!--/drop_cart-->
+                </div>
+                <!--/cart-->
+                <!--mob_menu_btn-->
+                <div class="mob_menu_btn">
+                    <div class="gam">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                    </div>
+                </div>
+                <!--/mob_menu_btn-->
+            </div>
+            <!--/top_line-->
+            <!--middle-->
+   
+            <div class="middle clrfix" itemscope="" itemtype="http://schema.org/Organization">
+                <meta itemprop="name" content="ТД Авантпак">
+                <meta itemprop="url" content="/contacts">
+                <!--logo-->
+                <div class="logo">
+                    <a href="/catalog" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+                        <img itemprop="url image" src="/media/resize/logo.png" alt="ТД Авантпак">
+                    </a>
+                </div>
+                <!--/logo-->
+                <!--col-->
+                <div class="col first">
+                    <div class="time"><span>9:00  —  18:00</span> по будням</div>
+                    <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <meta itemprop="telephone" content="+7 (499) 390-90-70">
+                        <span itemprop="streetAddress">
+                            Домодедовское шоссе, дом 14
+                        </span>
+
+                    </div>
+                </div>
+                <!--/col-->
+                <!--col-->
+                <div class="col two">
+                    <div class="tel">
+                        <a href="tel:+7 (499) 390-90-70">+7 (499) 390-90-70</a>
+                    </div>
+                    <div class="mail">
+                        <a href="mailto:info@avantpack.ru">info@avantpack.ru</a>
+                    </div>
+                </div>
+                <!--/col-->
+                <!--col-->
+                
+                <div class="col three">
+                    <div class="tel">
+                        <a href="tel:8 (800) 222-09-97">8 (800) 222-09-97</a>
+                    </div>
+                    <div class="request_call">
+                        <a href="#" data-modal="true" data-modal-id="call_me">Заказать звонок</a>
+                    </div>
+                </div>
+
+                <!--/col-->
+            </div>
+            <!--/middle-->
+            <!--search-->
+            <div class="search">
+                <form action="/search" method="post">
+                    <input type="text" id="query" name="query" placeholder="Поиск товара по названию" class="s_field"
+                            autocomplete="off" spellcheck="false" value="">
+                    <button type="submit" class="s_btn" id="search-catalog">Найти</button>
+                    <input type='hidden' name='csrfmiddlewaretoken' value='1IdNJKB0EHXrASiKGopfXxJ6kEN8Gtqu54EQqYafxDrhyN8NbWpbk5tGCKhCtPfq' />
+                </form>
+            </div>
+            <!--/search-->
+            
+                
+                        <div class="banner-top">
+                            
+                                <a href="/shop/294-perchatki-tpe"><img src="/media/banner-perchatki_ROHzmnM.svg"></a>
+                            
+                        </div>
+                
+            
+        </div>
+    </div>
+    <!--/header-->
+    
+
+    
+
+    
+
+    
+
+    
+        <!--wrapper-->
+        <div class="wrapper">
+            <!--breads-->
+            <div class="breads">
+                <ul class="clrfix" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="/">
+                            <span itemprop="name">Главная</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                        <h1 itemprop="name">Распродажа продукции!</h1>
+                        <meta itemprop="position" content="2">
+                    </li>
+                </ul>
+            </div>
+            <!--/breads-->
+        </div>
+    
+
+    
+        
+        
+        
+        <div class="wrapper">
+            
+            <p style="text-align:center"><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px"><strong>По поводу акционных товаров обращаться по номеру</strong>:</span><span style="font-size:14px"> </span><strong><span style="color:#e74c3c"><span style="font-size:26px">+8 (800) 222-09-97</span></span></strong></span><br />
+<br />
+<strong><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:28px"><span style="color:#e74c3c">ЦЕНЫ ДЕЙСТВУЮТ ТОЛЬКО ДО КОНЦА ТЕКУЩЕГО МЕСЯЦА!</span></span></span></strong><br />
+<br />
+<br />
+&nbsp;</p>
+            
+
+
+                
+                <div class="products clrfix">
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img2.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127748-perchatki-iz-termoplastichnogo-elastomera"><span itemprop="name">Перчатки из термопластичного эластомера</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127748</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="2.88" class="new">2.88</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127748">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127748" value="2000" price_type="пара" data-order="2000" data-step="2000">
+                                            <span class="quantity__units">пара</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="2000" data-order="2000"  item-id="127748" item-name="Перчатки из термопластичного эластомера" item-image="/media/small/тпэ_перчатки_синие.jpg" item-price="2.88" item-url="/shop/0127748-perchatki-iz-termoplastichnogo-elastomera">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img2.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l"><span itemprop="name">Перчатки нитриловые одноразовые L</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127645</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="17.32" class="new">17.32</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127645">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127645" value="250" price_type="шт" data-order="250" data-step="250">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="250" data-order="250"  item-id="127645" item-name="Перчатки нитриловые одноразовые L" item-image="/media/small/nitril-percha.jpg" item-price="17.32" item-url="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img2.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127635-tonkie-perchatki-lateksnyie-razmer"><span itemprop="name">Перчатки латексные неопудренные</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127635</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="18.17" class="new">18.17</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127635">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127635" value="500" price_type="пара" data-order="500" data-step="500">
+                                            <span class="quantity__units">пара</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="500" data-order="500"  item-id="127635" item-name="Перчатки латексные неопудренные" item-image="/media/small/IMG_5977lateks.jpg" item-price="18.17" item-url="/shop/0127635-tonkie-perchatki-lateksnyie-razmer">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img2.jpg" alt="">
+                            </a>
+                            <a href="/shop/0127645-perchatki-nitrilovyie-odnorazovyie-l">
+                                <img itemprop="image" src="img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127554-odnorazovyie-perchatki-razmer-l"><span itemprop="name">Одноразовые перчатки размер L</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127554</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="0.26" class="new">0.26</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127554">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127554" value="10000" price_type="шт" data-order="10000" data-step="10000">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="10000" data-order="10000"  item-id="127554" item-name="Одноразовые перчатки размер L" item-image="/media/small/perchatki3.jpg" item-price="0.26" item-url="/shop/0127554-odnorazovyie-perchatki-razmer-l">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0127572-perchatki-vinilovyie-neopudrennyie-razmer-m">
+                                <img itemprop="image" src="/media/small/Vinil_-_razmer_L_3raw2cH.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127572-perchatki-vinilovyie-neopudrennyie-razmer-m"><span itemprop="name">Перчатки виниловые неопудренные M</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127572</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="16.43" class="new">16.43</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127572">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127572" value="500" price_type="шт" data-order="500" data-step="500">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="500" data-order="500"  item-id="127572" item-name="Перчатки виниловые неопудренные M" item-image="/media/small/Vinil_-_razmer_L_3raw2cH.jpg" item-price="16.43" item-url="/shop/0127572-perchatki-vinilovyie-neopudrennyie-razmer-m">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0127745-perchatki-odnorazovyie-tpe">
+                                <img itemprop="image" src="/media/small/tpe-perchatki.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127745-perchatki-odnorazovyie-tpe"><span itemprop="name">Перчатки одноразовые ТПЭ прозрачные</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127745</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="2.91" class="new">2.91</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127745">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127745" value="2000" price_type="пара" data-order="2000" data-step="2000">
+                                            <span class="quantity__units">пара</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="2000" data-order="2000"  item-id="127745" item-name="Перчатки одноразовые ТПЭ прозрачные" item-image="/media/small/tpe-perchatki.JPG" item-price="2.91" item-url="/shop/0127745-perchatki-odnorazovyie-tpe">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0127721-maska-trehslojnaya-na-rezinke">
+                                <img itemprop="image" src="/media/small/odnoraz-maski.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127721-maska-trehslojnaya-na-rezinke"><span itemprop="name">Маска трехслойная на резинке</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127721</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="1.52" class="new">1.52</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127721">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127721" value="500" price_type="шт" data-order="500" data-step="500">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="500" data-order="500"  item-id="127721" item-name="Маска трехслойная на резинке" item-image="/media/small/odnoraz-maski.jpg" item-price="1.52" item-url="/shop/0127721-maska-trehslojnaya-na-rezinke">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0111094-meshok-polipropilenovyij-4675sm-zelenyij">
+                                <img itemprop="image" src="/media/small/IMG_9506.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0111094-meshok-polipropilenovyij-4675sm-zelenyij"><span itemprop="name">Мешок полипропиленовый 46*75см (зеленый)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 111094</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="9" class="new">9</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-111094">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-111094" value="1000" price_type="шт" data-order="1000" data-step="1000">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="1000" data-order="1000"  item-id="111094" item-name="Мешок полипропиленовый 46*75см (зеленый)" item-image="/media/small/IMG_9506.JPG" item-price="9" item-url="/shop/0111094-meshok-polipropilenovyij-4675sm-zelenyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0126909-paket-zip-lock-710-80-mkm-prozrachnyij">
+                                <img itemprop="image" src="/media/small/zip-lock_ibxQ1ID.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0126909-paket-zip-lock-710-80-mkm-prozrachnyij"><span itemprop="name">Пакет Zip-Lock 7*10 30 мкм (прозрачный)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 126909</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="0.26" class="new">0.26</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-126909">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-126909" value="10000" price_type="шт" data-order="10000" data-step="10000">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="10000" data-order="10000"  item-id="126909" item-name="Пакет Zip-Lock 7*10 30 мкм (прозрачный)" item-image="/media/small/zip-lock_ibxQ1ID.jpg" item-price="0.26" item-url="/shop/0126909-paket-zip-lock-710-80-mkm-prozrachnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0111099-meshok-polipropilenovyij-5595sm-zelenyij-2">
+                                <img itemprop="image" src="/media/small/IMG_9506.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0111099-meshok-polipropilenovyij-5595sm-zelenyij-2"><span itemprop="name">Мешок полипропиленовый 55*95см (зеленый)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 111099</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="10.1" class="new">10.1</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-111099">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-111099" value="1000" price_type="шт" data-order="1000" data-step="1000">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="1000" data-order="1000"  item-id="111099" item-name="Мешок полипропиленовый 55*95см (зеленый)" item-image="/media/small/IMG_9506.JPG" item-price="10.1" item-url="/shop/0111099-meshok-polipropilenovyij-5595sm-zelenyij-2">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/012920-strejch-plenka-ruchnaya-05300m-15mkm-pervichka-naturalnyij">
+                                <img itemprop="image" src="/media/small/IMG_9624_QTFl4Wc.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/012920-strejch-plenka-ruchnaya-05300m-15mkm-pervichka-naturalnyij"><span itemprop="name">Стрейч пленка ручная 0,5*300м 15мкм первичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 12920</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="326.4" class="new">326.4</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-12920">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-12920" value="6" price_type="шт" data-order="6" data-step="6">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="6" data-order="6"  item-id="12920" item-name="Стрейч пленка ручная 0,5*300м 15мкм первичка" item-image="/media/small/IMG_9624_QTFl4Wc.JPG" item-price="326.4" item-url="/shop/012920-strejch-plenka-ruchnaya-05300m-15mkm-pervichka-naturalnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0127741-maska-nesterilnaya">
+                                <img itemprop="image" src="/media/small/odnoraz-maski.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0127741-maska-nesterilnaya"><span itemprop="name">Маска нестерильная</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 127741</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="4.21" class="new">4.21</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-127741">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-127741" value="500" price_type="шт" data-order="500" data-step="500">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="500" data-order="500"  item-id="127741" item-name="Маска нестерильная" item-image="/media/small/odnoraz-maski.jpg" item-price="4.21" item-url="/shop/0127741-maska-nesterilnaya">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0122172-termousadochnaya-plenka-rukav-05220m-115mkr-vtorichka-tsvetnaturalnyij-2">
+                                <img itemprop="image" src="/media/small/ПВД_первичка_HaCRxrz.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0122172-termousadochnaya-plenka-rukav-05220m-115mkr-vtorichka-tsvetnaturalnyij-2"><span itemprop="name">Термоусадочная пленка рукав 0,5*220м 115мкм вторичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 122172</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="3759.07" class="new">3759.07</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-122172">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-122172" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="122172" item-name="Термоусадочная пленка рукав 0,5*220м 115мкм вторичка" item-image="/media/small/ПВД_первичка_HaCRxrz.JPG" item-price="3759.07" item-url="/shop/0122172-termousadochnaya-plenka-rukav-05220m-115mkr-vtorichka-tsvetnaturalnyij-2">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/081465-plenka-dlya-teplitsparnikov-polotno-25150m-140mkr-pervichka-naturalnyij">
+                                <img itemprop="image" src="/media/small/IMG_9661_f7dTupb.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/081465-plenka-dlya-teplitsparnikov-polotno-25150m-140mkr-pervichka-naturalnyij"><span itemprop="name">Пленка для теплиц/парников полотно 2,5*150м 140мкм первичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 81465</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="8114.4" class="new">8114.4</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-81465">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-81465" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="81465" item-name="Пленка для теплиц/парников полотно 2,5*150м 140мкм первичка" item-image="/media/small/IMG_9661_f7dTupb.JPG" item-price="8114.4" item-url="/shop/081465-plenka-dlya-teplitsparnikov-polotno-25150m-140mkr-pervichka-naturalnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0114284-paket-pvd-80100sm-100mkm-naturalnyij-2">
+                                <img itemprop="image" src="/media/small/IMG_9477_xcz0utN.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0114284-paket-pvd-80100sm-100mkm-naturalnyij-2"><span itemprop="name">Пакет ПВД 80*100см 100мкм</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 114284</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="40.81" class="new">40.81</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-114284">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-114284" value="100" price_type="шт" data-order="100" data-step="100">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="100" data-order="100"  item-id="114284" item-name="Пакет ПВД 80*100см 100мкм" item-image="/media/small/IMG_9477_xcz0utN.JPG" item-price="40.81" item-url="/shop/0114284-paket-pvd-80100sm-100mkm-naturalnyij-2">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/013049-strejch-plenka-ruchnaya-045135m-23mkm-vtorichka-prozrachnyij">
+                                <img itemprop="image" src="/media/small/IMG_9624_QTFl4Wc.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/013049-strejch-plenka-ruchnaya-045135m-23mkm-vtorichka-prozrachnyij"><span itemprop="name">Стрейч пленка ручная 0,45*135м 23мкм вторичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 13049</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="120.58" class="new">120.58</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-13049">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-13049" value="6" price_type="шт" data-order="6" data-step="6">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="6" data-order="6"  item-id="13049" item-name="Стрейч пленка ручная 0,45*135м 23мкм вторичка" item-image="/media/small/IMG_9624_QTFl4Wc.JPG" item-price="120.58" item-url="/shop/013049-strejch-plenka-ruchnaya-045135m-23mkm-vtorichka-prozrachnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0100165-vtorichnaya-plenka-pvd-polurukav-15120m-65mkr-prozrachnyij">
+                                <img itemprop="image" src="/media/small/IMG_9671_B0LFhIX.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0100165-vtorichnaya-plenka-pvd-polurukav-15120m-65mkr-prozrachnyij"><span itemprop="name">Вторичная пленка ПВД полурукав 1,5*120м 65мкм </span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 100165</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="2378.84" class="new">2378.84</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-100165">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-100165" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="100165" item-name="Вторичная пленка ПВД полурукав 1,5*120м 65мкм " item-image="/media/small/IMG_9671_B0LFhIX.JPG" item-price="2378.84" item-url="/shop/0100165-vtorichnaya-plenka-pvd-polurukav-15120m-65mkr-prozrachnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0100378-vtorichnaya-plenka-pvd-polurukav-04450m-75mkr-prozrachnyij">
+                                <img itemprop="image" src="/media/small/IMG_9671_B0LFhIX.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0100378-vtorichnaya-plenka-pvd-polurukav-04450m-75mkr-prozrachnyij"><span itemprop="name">Вторичная пленка ПВД полурукав 0,4*450м 75мкм </span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 100378</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="2744.82" class="new">2744.82</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-100378">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-100378" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="100378" item-name="Вторичная пленка ПВД полурукав 0,4*450м 75мкм " item-image="/media/small/IMG_9671_B0LFhIX.JPG" item-price="2744.82" item-url="/shop/0100378-vtorichnaya-plenka-pvd-polurukav-04450m-75mkr-prozrachnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/093236-silosnaya-plenka-polotno-08600m-70mkr-pervichka-cherno-belyij">
+                                <img itemprop="image" src="/media/small/silosnaya_g71OgEW.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/093236-silosnaya-plenka-polotno-08600m-70mkr-pervichka-cherno-belyij"><span itemprop="name">Силосная пленка полотно 0,8*600м 70мкм первичка (черно-белый)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 93236</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="6182.4" class="new">6182.4</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-93236">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-93236" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="93236" item-name="Силосная пленка полотно 0,8*600м 70мкм первичка (черно-белый)" item-image="/media/small/silosnaya_g71OgEW.jpg" item-price="6182.4" item-url="/shop/093236-silosnaya-plenka-polotno-08600m-70mkr-pervichka-cherno-belyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0111095-meshok-polipropilenovyij-4677sm-zelenyij">
+                                <img itemprop="image" src="/media/small/IMG_9506.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0111095-meshok-polipropilenovyij-4677sm-zelenyij"><span itemprop="name">Мешок полипропиленовый 46*77см (зеленый)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 111095</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="9.3" class="new">9.3</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-111095">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-111095" value="1000" price_type="шт" data-order="1000" data-step="1000">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="1000" data-order="1000"  item-id="111095" item-name="Мешок полипропиленовый 46*77см (зеленый)" item-image="/media/small/IMG_9506.JPG" item-price="9.3" item-url="/shop/0111095-meshok-polipropilenovyij-4677sm-zelenyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/081392-plenka-dlya-teplitsparnikov-polurukav-12100m-100mkr-pervichka-naturalnyij">
+                                <img itemprop="image" src="/media/small/IMG_9661_f7dTupb.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/081392-plenka-dlya-teplitsparnikov-polurukav-12100m-100mkr-pervichka-naturalnyij"><span itemprop="name">Пленка для теплиц/парников полурукав 1,2*100м 100мкм первичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 81392</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="3709.44" class="new">3709.44</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-81392">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-81392" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="81392" item-name="Пленка для теплиц/парников полурукав 1,2*100м 100мкм первичка" item-image="/media/small/IMG_9661_f7dTupb.JPG" item-price="3709.44" item-url="/shop/081392-plenka-dlya-teplitsparnikov-polurukav-12100m-100mkr-pervichka-naturalnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/081072-uzkaya-plenka-pvd-rukav-014450m-140mkr-vtorichka-prozrachnyij">
+                                <img itemprop="image" src="/media/small/ПВД_ли.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/081072-uzkaya-plenka-pvd-rukav-014450m-140mkr-vtorichka-prozrachnyij"><span itemprop="name">Узкая пленка ПВД рукав 0,14*450м 140мкм вторичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 81072</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="1793.28" class="new">1793.28</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-81072">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-81072" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="81072" item-name="Узкая пленка ПВД рукав 0,14*450м 140мкм вторичка" item-image="/media/small/ПВД_ли.JPG" item-price="1793.28" item-url="/shop/081072-uzkaya-plenka-pvd-rukav-014450m-140mkr-vtorichka-prozrachnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0121859-termousadochnaya-plenka-rukav-12100m-90mkr-vtorichka-tsvetnaturalnyij-2">
+                                <img itemprop="image" src="/media/small/ПВД_первичка_HaCRxrz.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0121859-termousadochnaya-plenka-rukav-12100m-90mkr-vtorichka-tsvetnaturalnyij-2"><span itemprop="name">Термоусадочная пленка рукав 1,2*100м 90мкм вторичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 121859</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="3209.33" class="new">3209.33</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-121859">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-121859" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="121859" item-name="Термоусадочная пленка рукав 1,2*100м 90мкм вторичка" item-image="/media/small/ПВД_первичка_HaCRxrz.JPG" item-price="3209.33" item-url="/shop/0121859-termousadochnaya-plenka-rukav-12100m-90mkr-vtorichka-tsvetnaturalnyij-2">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/093229-silosnaya-plenka-polotno-14320m-60mkr-pervichka-cherno-beloe">
+                                <img itemprop="image" src="/media/small/silosnaya_g71OgEW.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/093229-silosnaya-plenka-polotno-14320m-60mkr-pervichka-cherno-beloe"><span itemprop="name">Силосная пленка полотно 1,4*320м 60мкм первичка (черно-белый)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 93229</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="4945.92" class="new">4945.92</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-93229">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-93229" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="93229" item-name="Силосная пленка полотно 1,4*320м 60мкм первичка (черно-белый)" item-image="/media/small/silosnaya_g71OgEW.jpg" item-price="4945.92" item-url="/shop/093229-silosnaya-plenka-polotno-14320m-60mkr-pervichka-cherno-beloe">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/0126913-paket-zip-lock-1015-35-mkm-prozrachnyij">
+                                <img itemprop="image" src="/media/small/zip-lock_ibxQ1ID.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/0126913-paket-zip-lock-1015-35-mkm-prozrachnyij"><span itemprop="name">Пакет Zip-Lock 10*15 30 мкм (прозрачный)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 126913</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="0.46" class="new">0.46</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-126913">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-126913" value="10000" price_type="шт" data-order="10000" data-step="10000">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="10000" data-order="10000"  item-id="126913" item-name="Пакет Zip-Lock 10*15 30 мкм (прозрачный)" item-image="/media/small/zip-lock_ibxQ1ID.jpg" item-price="0.46" item-url="/shop/0126913-paket-zip-lock-1015-35-mkm-prozrachnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/013042-strejch-plenka-ruchnaya-05180m-17mkm-vtorichka-prozrachnyij">
+                                <img itemprop="image" src="/media/small/IMG_9624_QTFl4Wc.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/013042-strejch-plenka-ruchnaya-05180m-17mkm-vtorichka-prozrachnyij"><span itemprop="name">Стрейч пленка ручная 0,5*180м 17мкм вторичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 13042</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="165.53" class="new">165.53</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-13042">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-13042" value="6" price_type="шт" data-order="6" data-step="6">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="6" data-order="6"  item-id="13042" item-name="Стрейч пленка ручная 0,5*180м 17мкм вторичка" item-image="/media/small/IMG_9624_QTFl4Wc.JPG" item-price="165.53" item-url="/shop/013042-strejch-plenka-ruchnaya-05180m-17mkm-vtorichka-prozrachnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/081299-plenka-dlya-teplitsparnikov-polotno-1130m-120mkr-pervichka-naturalnyij">
+                                <img itemprop="image" src="/media/small/IMG_9661_f7dTupb.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/081299-plenka-dlya-teplitsparnikov-polotno-1130m-120mkr-pervichka-naturalnyij"><span itemprop="name">Пленка для теплиц/парников полотно 1,1*30м 120мкм первичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 81299</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="612.05" class="new">612.05</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-81299">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-81299" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="81299" item-name="Пленка для теплиц/парников полотно 1,1*30м 120мкм первичка" item-image="/media/small/IMG_9661_f7dTupb.JPG" item-price="612.05" item-url="/shop/081299-plenka-dlya-teplitsparnikov-polotno-1130m-120mkr-pervichka-naturalnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/093218-silosnaya-plenka-polurukav-1150m-190mkr-pervichka-cherno-belyij">
+                                <img itemprop="image" src="/media/small/silosnaya_g71OgEW.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/093218-silosnaya-plenka-polurukav-1150m-190mkr-pervichka-cherno-belyij"><span itemprop="name">Силосная пленка полурукав 1,1*50м 190мкм первичка (черно-белый)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 93218</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="3845.6" class="new">3845.6</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-93218">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-93218" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="93218" item-name="Силосная пленка полурукав 1,1*50м 190мкм первичка (черно-белый)" item-image="/media/small/silosnaya_g71OgEW.jpg" item-price="3845.6" item-url="/shop/093218-silosnaya-plenka-polurukav-1150m-190mkr-pervichka-cherno-belyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/093225-silosnaya-plenka-polotno-12350m-60mkr-pervichka-cherno-belyij">
+                                <img itemprop="image" src="/media/small/silosnaya_g71OgEW.jpg" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/093225-silosnaya-plenka-polotno-12350m-60mkr-pervichka-cherno-belyij"><span itemprop="name">Силосная пленка полотно 1,2*350м 60мкм первичка (черно-белый)</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 93225</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="4636.8" class="new">4636.8</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-93225">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-93225" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="93225" item-name="Силосная пленка полотно 1,2*350м 60мкм первичка (черно-белый)" item-image="/media/small/silosnaya_g71OgEW.jpg" item-price="4636.8" item-url="/shop/093225-silosnaya-plenka-polotno-12350m-60mkr-pervichka-cherno-belyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                <!--product_item-->
+                <div class="product_item" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <!--product-->
+                    <div class="product">
+                        <!--pic-->
+                        <div class="pic">
+                            
+                            <a href="/shop/081306-plenka-dlya-teplitsparnikov-polurukav-340m-180mkr-pervichka-naturalnyij">
+                                <img itemprop="image" src="/media/small/IMG_9661_f7dTupb.JPG" alt="">
+                                
+                            </a>
+                        </div>
+                        <!--/pic-->
+                        <!--text-->
+                        <div class="text">
+                            <!--title-->
+                            <div class="title">
+                                <a itemprop="url" href="/shop/081306-plenka-dlya-teplitsparnikov-polurukav-340m-180mkr-pervichka-naturalnyij"><span itemprop="name">Пленка для теплиц/парников полурукав 3*40м 180мкм первичка</span></a>
+                            </div>
+                            <!--/title-->
+                            <!--desc-->
+                            <div class="desc">
+                                <ul>
+                                    <li><span>Код товара:</span> 81306</li>
+                                    
+                                </ul>
+                                <!--price-->
+                                <div class="price">
+                                    
+                                    <div itemprop="price" content="6676.99" class="new">6676.99</div>
+                                </div>
+                                <!--/price-->
+                            </div>
+                            <!--/desc-->
+                        </div>
+                        <!--/text-->
+                        <!--cart_info-->
+                        <div class="cart_info" id="cart-81306">
+                            <!--wrap-->
+                            <div class="wrap">
+                                <!--quantity-->
+                                
+                                
+                                    <div class="quantity quantity-new">
+                                        <div class="quantity__content">
+                                            <input type="text" name="quantity" id="quantity-81306" value="1" price_type="шт" data-order="1" data-step="0">
+                                            <span class="quantity__units">шт</span>
+                                        </div>
+    
+                                        <div class="quantity__buttons">
+                                            <button type="button" class="plus_btn">+</button>
+                                            <button type="button" class="minus_btn">-</button>
+                                        </div>
+                                    </div>
+                                    <div class="add_cart add-cart__catalog">
+                                        <a href="#" onclick="return Cart.add(this);" data-step="0" data-order="None"  item-id="81306" item-name="Пленка для теплиц/парников полурукав 3*40м 180мкм первичка" item-image="/media/small/IMG_9661_f7dTupb.JPG" item-price="6676.99" item-url="/shop/081306-plenka-dlya-teplitsparnikov-polurukav-340m-180mkr-pervichka-naturalnyij">В корзину</a>
+                                    </div>
+                                
+                                <!--/add_cart-->
+                            </div>
+                            <!--/wrap-->
+                        </div>
+                        <!--/cart_info-->
+                    </div>
+                    <!--/product-->
+                </div>
+                <!--/product_item-->
+                
+                </div>
+            
+        </div>
+    
+
+    
+        
+        <!--footer-->
+    <div class="footer">
+        <div class="wrp">
+            <!--col_1-->
+            <div class="col_1 clrfix">
+                <!--f_logo-->
+                <div class="f_logo">
+                    <img src="/static/images/logo.png" alt="">
+                </div>
+                <!--/f_logo-->
+                <!--copyright-->
+                <div class="copyright">
+                    © ООО «ТД Авантпак», <br>2014 – 2021
+                </div>
+                <!--/copyright-->
+                <!--counter-->
+                <div class="counter">
+                    <ul class="clrfix">
+                        <li>
+                            <a rel="nofollow" href="//best-tara.ru"><img onclick="return false;" id="url-b" src="/static/img/4.jpg"></a>
+                            
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!--/counter-->
+            </div>
+            <!--/col_1-->
+            <!--col_2-->
+            <div class="col_2 clrfix">
+                <!--f_menu-->
+                <div class="f_menu clrfix">
+                    <ul class="first">
+                        
+                            
+                            <li><a href="/manager-company">Менеджеры</a></li>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                            <li><a href="/spec">Распродажа продукции!</a></li>
+                            
+                        
+                        <!--
+                        <li><a href="/faq">Вопросы — ответы</a></li>
+                        <li><a href="/dostavka">Доставка</a></li>
+                        <li><a href="/o-zakupke">О закупке</a></li>
+                        <li><a href="/konkurs">Конкурс</a></li>
+                        <li><a href="/skidki">Скидки</a></li>
+                        -->
+                    </ul>
+                    <ul class="two">
+                         
+                            
+                        
+                            
+                            <li><a href="/rekvizity">Реквизиты</a></li>
+                            
+                        
+                            
+                            <li><a href="/konfidencialnost">Политика конфиденциальности</a></li>
+                            
+                        
+                            
+                        
+                        <!--
+                        <li><a href="/about">О компании</a></li>
+                        <li><a href="/otzivi">Отзывы</a></li>
+                        <li><a href="#">Менеджеры</a></li>
+                        <li><a href="/contacts">Контакты</a></li>
+                        <li><a href="/polzovatelskoe-soglashenye">Пользовательское соглашение</a></li>
+                        -->
+                    </ul>
+                </div>
+                <!--/f_menu-->
+                <!--contacts-->
+                <div class="contacts clrfix">
+                    <!--first-->
+                    <div class="first">
+                        <div class="tel">
+                            <a href="tel:+7 (499) 390-90-70">+7 (499) 390-90-70</a>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:info@avantpack.ru">info@avantpack.ru</a>
+                        </div>
+                    </div>
+                    <!--/first-->
+                    <!--two-->
+                    <div class="two">
+                        <div class="tel">
+                            <a href="tel:8 (800) 222-09-97">8 (800) 222-09-97</a>
+                        </div>
+                        <div class="txt">
+                            Звонок по России бесплатный!
+                        </div>
+                    </div>
+                    <!--/two-->
+                </div>
+                <!--/contacts-->
+            </div>
+            <!--/col_2-->
+            <div class="oferta">
+            Цены на данном сайте носят информационный характер и не являются публичной офертой, определяемой Статьей 437 ГК РФ
+            </div>
+        </div>
+    </div>
+
+
+        <link defer async href="/static/css/selecter.css" type="text/css" rel="stylesheet">
+        <link defer async href="/static/css/slick.css" type="text/css" rel="stylesheet">
+        <link defer async href="/static/css/calculator.css" type="text/css" rel="stylesheet">
+        <link defer async href="/static/css/fancybox.min.css" type="text/css" rel="stylesheet">
+        <link defer async href="/static/css/ui-slider.css" type="text/css" rel="stylesheet">
+
+<link defer async href="/static/css/media.css" type="text/css" rel="stylesheet">
+<link defer async href="/static/css/about.css" type="text/css" rel="stylesheet">
+<link defer async href="/static/css/scroll.css" type="text/css" rel="stylesheet">
+<link defer async href="/static/css/modal.css" type="text/css" rel="stylesheet">
+<link defer async href="/static/css/404.css" type="text/css" rel="stylesheet">
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+var yaParams = {ip: ""};
+
+
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(20790967, "init", {
+    id:20790967,
+    clickmap:true,
+    trackLinks:true,
+    accurateTrackBounce:true,
+    webvisor:true,
+    trackHash:true,
+    params:window.yaParams
+});
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179431555-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179431555-1');
+</script>
+
+<noscript><div><img src="https://mc.yandex.ru/watch/20790967" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    
+    <!--footer-->
+    <div class="menu-overlay"></div>
+        <!--popup_modal-->
+<div class="popup_modal" id="call_me">
+    <!--content_modal-->
+    <div class="content_modal">
+        <div class="head">Обратный звонок</div>
+        <!--form-->
+        <div class="form">
+            <form class="form" call-me-maybe name="back-call" id="back-cal" method="post" action="/obratka">
+            <ul>
+                <li class="field">
+                    <input type="text" name="name" placeholder="Представьтесь, пожалуйста" autocomplete="off"
+                            spellcheck="false">
+                </li>
+                <li class="field">
+                    <input type="text" name="phone" placeholder="Номер телефона" autocomplete="off" spellcheck="false">
+                </li>
+                <li class="btn">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='1IdNJKB0EHXrASiKGopfXxJ6kEN8Gtqu54EQqYafxDrhyN8NbWpbk5tGCKhCtPfq' />
+                    <button type="submit">Перезвоните мне!</button>
+                    <input type="hidden" name="is_robot" value="1">
+                </li>
+            </ul>
+            </form>
+        </div>
+        <!--/form-->
+        <div class="b-close" title="Закрыть окно"></div>
+    </div>
+    <!--/content_modal-->
+</div>
+<!--/popup_modal-->
+
+<!--popup_modal-->
+<div class="popup_modal" id="question">
+    <!--content_modal-->
+    <div class="content_modal">
+        <div class="head">Задать вопрос</div>
+        <!--form-->
+
+          <form class="form" call-me-maybe name="manager" id="manager" method="post" action="/obratka" >
+            <ul>
+                <li class="field">
+                    <input type="text" name="name" placeholder="Представьтесь, пожалуйста" autocomplete="off"
+                            spellcheck="false">
+                </li>
+                <li class="field">
+                    <input type="text" name="email" placeholder="Электронная почта" autocomplete="off"
+                            spellcheck="false">
+                </li>
+                <li class="field">
+                    <input type="text" name="phone" placeholder="Номер телефона" autocomplete="off" spellcheck="false">
+                </li>
+                <li class="field">
+                    <textarea placeholder="Напишите ваш вопрос" name="message"></textarea>
+                </li>
+                <li class="btn">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='1IdNJKB0EHXrASiKGopfXxJ6kEN8Gtqu54EQqYafxDrhyN8NbWpbk5tGCKhCtPfq' />
+                    <button type="submit">Отправить</button>
+                    <input type="hidden" name="is_robot" value="1">
+                    <input type="hidden" name="addres_to" value="9653571313@avantpack.ru">
+                </li>
+            </ul>
+        </div>
+        <!--/form-->
+        <div class="b-close" title="Закрыть окно"></div>
+    </div>
+    <!--/content_modal-->
+</div>
+<!--/popup_modal-->
+
+<!--popup_modal-->
+<div class="popup_modal" id="thank_you">
+    <!--content_modal-->
+    <div class="content_modal">
+        <div class="head">Спасибо!</div>
+        <div class="text">
+            <p>
+                Не выключайте, пожалуйста,<br> свой телефон.
+            </p>
+            <p>
+                Мы скоро перезвоним!
+            </p>
+            <div class="close_popup">
+                <a href="#">Закрыть</a>
+            </div>
+        </div>
+        <div class="b-close" title="Закрыть окно"></div>
+    </div>
+    <!--/content_modal-->
+</div>
+<!--/popup_modal-->
+
+<div class="popup_modal" id="image-popup">
+    <div class="content_modal">
+        <div class="head">Наша продукция</div>
+        <div class="text">
+            <div class="image__wrapper"><img src="/media/streich.jpg"></div>
+        </div>
+        <div class="b-close" title="Закрыть окно"></div>
+    </div>
+</div>
+
+<!--iframe_modal-->
+<div id="iframe_modal">
+    <div class="content_iframe"></div>
+    <div class="b-close" title="Закрыть окно"></div>
+</div>
+<!--/iframe_modal-->
+    
+    
+
+
+
+    
+    
+    
+    
+
+    
+    
+    <input type='hidden' name='csrfmiddlewaretoken' value='1IdNJKB0EHXrASiKGopfXxJ6kEN8Gtqu54EQqYafxDrhyN8NbWpbk5tGCKhCtPfq' />
+
+
+    <div id="button-up">
+			<span></span>
+		</div>
+
+
+    <div class="fixed-wrapper">
+        <a class="fixed-block certificate visible" href="/certificate">Наши благодарности и отзывы!</a>
+        <a class="fixed-block feedback visible" data-modal="true" data-head="Оправить жалобу на некачественный товар в отдел контроля качества" data-modal-id="question" href="#">Некачественный товар? Напишите нам!</a>
+    </div>
+</body>

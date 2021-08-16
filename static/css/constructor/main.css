@@ -1,0 +1,36 @@
+#main-container {
+	margin: 40px auto;
+	width: 1200px;
+	max-width: 100%;
+}
+
+.api-buttons > a {
+	margin: 0 5px 0 0 !important;
+	text-decoration: none !important;
+}
+
+.price {
+	font-size: 25px !important;
+	line-height: 26px !important;
+}
+
+
+.fpd-actions-wrapper.fpd-pos-scale{
+	top: 10%;
+    left: 5%;
+}
+
+
+
+#vector-x{
+	display: block;
+    top: 0;
+    position: absolute;
+	
+}
+
+#vector-y{
+	left: 35px;
+	position: absolute;
+    z-index: 0;
+}

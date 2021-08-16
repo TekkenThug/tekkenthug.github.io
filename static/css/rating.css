@@ -1,0 +1,74 @@
+.rating {
+    display: flex;
+    /* align-items: flex-end; */
+    align-items: center;
+    font-size: 18px;
+    line-height: 0.75;
+}
+.rating.big-stars {
+    font-size: 26px;
+}
+.rating__body {
+    position: relative;
+}
+.rating__body::before {
+    content: "☆☆☆☆☆";
+    display: block;
+    color: #dd4d51;
+}
+.rating-one .rating__body::before {
+    content: "☆";
+    display: block;
+    color: #dd4d51;
+}
+.rating__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.rating__active::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #dd4d51;
+}
+.rating-one .rating__active::before {
+    content: "★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #dd4d51;
+}
+.rating__items {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.rating__item {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+.rating__value {
+    display: none;
+    font-size: 50%;
+    line-height: 1;
+    padding: 0 0 0 10px;
+}
+.rating__value-count {
+    font-size: 14px;
+    margin-left: 5px;
+}

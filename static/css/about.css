@@ -1,0 +1,293 @@
+.about {
+ padding-bottom: 40px;
+}
+
+.about .desc {
+ font-size: 15px;
+ font-weight: 400;
+ line-height: 25px;
+ color: #404041;
+}
+
+.about .desc p {
+ padding-bottom: 20px;
+}
+
+.about .desc p:last-child {
+ padding-bottom: 0;
+}
+
+.about .quote {
+ border-left: 5px solid #dd4d51;
+ padding-left: 15px;
+ margin-bottom: 20px;
+}
+
+.video_col {
+ padding-top: 20px;
+}
+
+.video_col .item {
+ padding: 0 10px;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+.video_col .pic {
+ position: relative;
+ overflow: hidden;
+ -webkit-box-shadow: 0 4px 6px rgba(51, 51, 51, 0.34);
+ -moz-box-shadow: 0 4px 6px rgba(51, 51, 51, 0.34);
+ box-shadow: 0 4px 6px rgba(51, 51, 51, 0.34);
+ -webkit-transition: all ease .2s;
+ transition: all ease .2s;
+}
+
+.video_col .pic:hover {
+ -webkit-box-shadow: 0 23px 38px rgba(51, 51, 51, 0.38);
+ -moz-box-shadow: 0 23px 38px rgba(51, 51, 51, 0.38);
+ box-shadow: 0 23px 38px rgba(51, 51, 51, 0.38);
+}
+
+.video_col .pic a {
+ position: relative;
+ display: block;
+}
+
+.video_col .pic a:before {
+ position: absolute;
+ left: 15px;
+ bottom: 15px;
+ display: block;
+ width: 84px;
+ height: 84px;
+ background: url("../images/play-icon.png") 0 0 no-repeat;
+ -o-background-size: cover;
+ -webkit-background-size: cover;
+ -khtml-background-size: cover;
+ -moz-background-size: cover;
+ background-size: cover;
+ content: '';
+ z-index: 3;
+}
+
+.video_col .pic a:after {
+ display: block;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ left: 0;
+ top: 0;
+ background: #2f2727;
+ opacity: .77;
+ content: '';
+ z-index: 2;
+ -webkit-transition: opacity ease .2s;
+ transition: opacity ease .2s;
+}
+
+.video_col .pic a:hover:after {
+ opacity: 0;
+}
+
+.video_col .pic img {
+ display: block;
+ width: 100%;
+ transition: transform .4s ease-out;
+}
+
+.video_col .pic:hover img {
+ transform: scale(1.1);
+}
+
+.video_col .txt {
+ display: block;
+ width: 100%;
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ z-index: 3;
+ color: #fff;
+ padding: 0 10px 36px 115px;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ -webkit-transition: opacity ease .2s;
+ transition: opacity ease .2s;
+}
+
+.video_col .pic:hover .txt {
+ opacity: 0;
+}
+
+.video_col .name {
+ display: block;
+ font-size: 20px;
+ font-weight: 700;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+.video_col .time {
+ display: block;
+ font-size: 14px;
+ font-weight: 300;
+ padding-top: 3px;
+}
+
+.benefits h3 {
+ font-size: 24px;
+ font-weight: 700;
+ color: #404041;
+ text-align: center;
+ padding-bottom: 30px;
+}
+
+.benefits ul {
+ font-size: 0;
+ margin-bottom: -20px;
+}
+
+.benefits li {
+ padding-bottom: 20px;
+}
+
+.benefits li .pic {
+ height: 110px;
+ line-height: 110px;
+ text-align: center;
+}
+
+.benefits li .pic img {
+ vertical-align: middle;
+}
+
+.benefits li:nth-child(1) img {
+ height: 74px;
+}
+
+.benefits li:nth-child(2) img {
+ height: 87px;
+}
+
+.benefits li:nth-child(3) img {
+ height: 72px;
+}
+
+.benefits li:nth-child(4) img {
+ height: 83px;
+}
+
+.benefits li h4 {
+ font-size: 20px;
+ font-weight: 700;
+ overflow: hidden;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.benefits li .item {
+ border: 4px solid #f3f3f3;
+ padding: 20px;
+}
+
+.benefits li p {
+ clear: both;
+ font-size: 15px;
+ font-weight: 400;
+ line-height: 26px;
+}
+
+@media only screen and (min-width: 480px) {
+
+ .about .desc {
+  font-size: 17px;
+  line-height: 27px;
+ }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+ .benefits h3 {
+  font-size: 28px;
+  text-align: left;
+ }
+
+ .benefits ul {
+  margin: 0 -10px -20px;
+ }
+
+ .benefits li {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 0 10px 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+ .benefits li .pic {
+  text-align: left;
+ }
+
+ .benefits li h4 {
+  text-align: left;
+ }
+
+ .about .quote {
+  padding-left: 30px;
+ }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+ .about:after {
+  display: table;
+  clear: both;
+  content: '';
+ }
+
+ .about .desc {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+ .video_col {
+  float: left;
+  width: 50%;
+  padding: 0 0 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+ .benefits h3 {
+  font-size: 32px;
+ }
+
+ .benefits li h4 {
+  font-size: 24px;
+ }
+
+ .benefits li .pic {
+  height: 115px;
+ }
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+ .benefits li {
+  width: 25%;
+ }
+
+}
