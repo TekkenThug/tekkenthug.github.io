@@ -5729,6 +5729,23 @@ form#vacance-call select{
     margin-left: 5px;
 }
 
+#qview__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#qview__slider .slick-arrow.slick-prev {
+  left: 10px;
+}
+
+#qview__slider .slick-arrow.slick-next {
+  right: 10px;
+}
+
 .qview__descr .qview__field:nth-child(2n + 1) {
     background-color: #f0f0f0;
 }
