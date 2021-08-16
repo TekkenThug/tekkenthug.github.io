@@ -1539,8 +1539,7 @@ body {
   z-index: 0;
 }
 
-#photo_slider .product,
-#qview__slider .product {
+#photo_slider .product{
     margin: 0;
 }
 
@@ -2150,8 +2149,7 @@ div.title.constructor a, div.title.constructor a:hover{
   position: relative;
 }
 
-#photo_slider .item a:before,
-#qview__slider .item a:before{
+#photo_slider .item a:before {
   display: none;
   position: absolute;
   left: 10px;
@@ -2166,8 +2164,7 @@ div.title.constructor a, div.title.constructor a:hover{
   box-sizing: border-box;
 }
 
-#photo_slider .item.product a:before
-#qview__slider .item.product a:before{
+#photo_slider .item.product a:before {
 	border: none;
 }
 
@@ -5817,6 +5814,7 @@ form#vacance-call select{
   background-color: transparent;
   width: 100%;
   display: block;
+  text-align: right;
 }
 
 .qview__block .qview__link-btn {
