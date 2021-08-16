@@ -165,9 +165,5 @@ $(function () {
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: "linear",
     });
 })
