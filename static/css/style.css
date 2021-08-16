@@ -5753,6 +5753,11 @@ form#vacance-call select{
   background-image: url("../images/right-arrow.svg");
 }
 
+#qview__slider .qview__slider-item img {
+  display: block;
+  width: 100%;
+}
+
 .qview__descr {
   display: flex;
   flex-direction: column;
