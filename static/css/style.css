@@ -2168,14 +2168,12 @@ div.title.constructor a, div.title.constructor a:hover{
 	border: none;
 }
 
-#photo_slider .item img,
-#qview__slider .item img{
+#photo_slider .item img {
   display: block;
   width: 100%;
 }
 
-#photo_slider .item.product img,
-#qview__slider .item.product img{
+#photo_slider .item.product img {
     width: 100%;
 }
 
