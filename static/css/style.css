@@ -5810,10 +5810,13 @@ form#vacance-call select{
   padding: 4px 10px;
   border: 1px solid #dd393c;
   font-size: 14px;
+  width: 140px;
 }
 
 .qview__field-input input {
   background-color: transparent;
+  width: 100%;
+  display: block;
 }
 
 .qview__block .qview__link-btn {
