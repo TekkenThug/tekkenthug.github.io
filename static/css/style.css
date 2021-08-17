@@ -5818,6 +5818,18 @@ form#vacance-call select{
   text-align: right;
 }
 
+.qview__block--static {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qview__block--static > * + * {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
 .qview__block .qview__link-btn {
     text-decoration: none;
     transition: all 0.3s ease;
