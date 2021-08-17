@@ -3783,6 +3783,11 @@ h1.constructor{
     opacity: 0;
 }
 
+.top-container .eye {
+  width: 24px;
+  height: 20px;
+}
+
 .product:hover .top-container .heart,
 .product:hover .top-container .eye,
 .heart.active {
