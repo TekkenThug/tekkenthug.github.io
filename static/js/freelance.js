@@ -160,7 +160,7 @@ $(function () {
     });
     
     /* Slider for quick view */
-    $('#qview__slider').slick({
+    $('#qview__slider').slick('unslick').slick('reinit').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
