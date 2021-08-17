@@ -5824,10 +5824,13 @@ form#vacance-call select{
   align-items: center;
 }
 
-.qview__block--static > * + * {
-  margin-top: 10px;
+.qview__block--static > * {
   font-weight: 500;
   font-size: 18px;
+}
+
+.qview__block--static > * + * {
+  margin-top: 10px;
 }
 
 .qview__block .qview__link-btn {
