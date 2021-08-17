@@ -5861,6 +5861,10 @@ form#vacance-call select{
     text-decoration: none;
 }
 
+.qview__link-btn--static {
+  border: none;
+}
+
 .qview__link-btn--static:hover {
     box-shadow: none;
 }
