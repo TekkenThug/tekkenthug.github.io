@@ -14,9 +14,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-    .social__btns {
-        position: absolute;
-    }
+  .social__btns {
+      position: absolute;
+  }
+
   .manager .item .info {
     padding-right: 25px;
   }
@@ -36,6 +37,15 @@
     transform: translateX(-100%);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .qview__link-btn .social__btns-container {
+    position: static;
+    transform: none;
+    display: block;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
   }
 
   .social__btns-container.active {
