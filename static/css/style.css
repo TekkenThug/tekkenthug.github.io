@@ -3799,10 +3799,7 @@ h1.constructor{
     transition: all 0.2s ease;
 }
 
-.top-container .heart svg path:not(.heart) {
-  fill: #ffffff;
-}
-
+.top-container .heart svg path,
 .top-container .eye svg path {
     fill: #f4f4f4;
 }
