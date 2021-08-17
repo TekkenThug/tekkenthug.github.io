@@ -3737,17 +3737,17 @@ h1.constructor{
     visibility: hidden;
     color: #fff;
     font-weight: 500;
-    padding: 10px 5px;
+    padding: 10px;
     font-size: 16px;
     position: absolute;
     background-color: #dd4d51;
     text-align: center;
     z-index: 20;
     left: 0;
-    right: 0;
     top: 0;
     line-height: 18px;
     transition: all 0.2s ease;
+    max-width: 220px;
 }
 
 .heart-msg.active {

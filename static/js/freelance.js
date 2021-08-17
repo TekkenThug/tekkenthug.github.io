@@ -149,7 +149,7 @@ $(function () {
 
             setTimeout(function () {
                 elem.removeClass('active')
-            }, 3000)
+            }, 2000)
         }
     });
     
