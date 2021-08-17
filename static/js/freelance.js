@@ -170,4 +170,9 @@ $(function () {
             cssEase: "linear",
         });
     });
+
+    /* Close btn for Quick view */
+    $('.qview__close').on('click', function () {
+       $('.qview').hide();
+    });
 })
