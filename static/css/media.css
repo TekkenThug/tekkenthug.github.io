@@ -42,7 +42,7 @@
   .qview__link-btn .social__btns-container {
     position: static;
     transform: none;
-    display: block;
+    display: flex;
     box-shadow: none;
     border: none;
     background-color: transparent;
