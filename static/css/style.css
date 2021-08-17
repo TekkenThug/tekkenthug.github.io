@@ -3747,7 +3747,7 @@ h1.constructor{
     top: 0;
     line-height: 18px;
     transition: all 0.2s ease;
-    max-width: 220px;
+    max-width: 200px;
 }
 
 .heart-msg.active {
