@@ -157,13 +157,13 @@ $(function () {
     $('.top-container .eye').on('click', function(event) {
         event.preventDefault();
         $('.qview').bPopup();
-    });
-    
-    /* Slider for quick view */
-    $('#qview__slider').slick('unslick').slick('reinit').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        arrows: true,
+
+        /* Slider for quick view */
+        $('#qview__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+        });
     });
 })
