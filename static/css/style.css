@@ -2182,7 +2182,9 @@ div.title.constructor a, div.title.constructor a:hover{
 }
 
 .photo_video .slick-prev,
-.photo_video .slick-next {
+.photo_video .slick-next,
+#qview__slider .slick-prev,
+#qview__slider .slick-next{
   display: block;
   width: 70px;
   height: 60px;
@@ -2200,17 +2202,23 @@ div.title.constructor a, div.title.constructor a:hover{
 }
 
 .photo_video .slick-prev:hover,
-.photo_video .slick-next:hover {
+.photo_video .slick-next:hover,
+#qview__slider .slick-prev:hover,
+#qview__slider .slick-next:hover {
   background-color: #ff7770;
 }
 
 .photo_video .slick-prev:active,
-.photo_video .slick-next:active {
+.photo_video .slick-next:active,
+#qview__slider .slick-prev:active,
+#qview__slider .slick-next:active{
   background-color: #a13235;
 }
 
 .photo_video .slick-prev:before,
-.photo_video .slick-next:before {
+.photo_video .slick-next:before,
+#qview__slider .slick-prev:before,
+#qview__slider .slick-next:before {
   display: block;
   width: 11px;
   height: 27px;
@@ -2227,18 +2235,21 @@ div.title.constructor a, div.title.constructor a:hover{
   content: '';
 }
 
-.photo_video .slick-next {
+.photo_video .slick-next,
+#qview__slider .slick-next {
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.photo_video .slick-prev {
+.photo_video .slick-prev,
+#qview__slider .slick-prev {
   right: 72px;
 }
 
-.photo_video .slick-next {
+.photo_video .slick-next,
+#qview__slider .slick-next {
   right: 0;
 }
 
@@ -5741,32 +5752,6 @@ form#vacance-call select{
 
 .qview__block > * + * {
     margin-left: 5px;
-}
-
-#qview__slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  border: none;
-  background-color: transparent;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  font-size: 0;
-  z-index: 10;
-}
-
-#qview__slider .slick-arrow.slick-prev {
-  left: 10px;
-  background-image: url("../images/left-arrow.svg");
-}
-
-#qview__slider .slick-arrow.slick-next {
-  right: 10px;
-  background-image: url("../images/right-arrow.svg");
 }
 
 .qview__descr {
