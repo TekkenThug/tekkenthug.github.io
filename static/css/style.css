@@ -3781,6 +3781,7 @@ h1.constructor{
     width: 20px;
     height: 20px;
     opacity: 0;
+    transition: all 0.2s ease;
 }
 
 .top-container .eye {
