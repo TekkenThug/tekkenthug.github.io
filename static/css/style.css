@@ -5827,6 +5827,7 @@ form#vacance-call select{
 .qview__block--static > * {
   font-weight: 500;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .qview__block--static > * + * {
@@ -5864,4 +5865,9 @@ form#vacance-call select{
 .qview__link-btn .small {
   font-size: 12px;
   line-height: 14px;
+}
+
+.qview__block--static .social__btns-container {
+  justify-content: center;
+  margin-bottom: 10px;
 }
