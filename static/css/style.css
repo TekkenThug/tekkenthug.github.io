@@ -5856,6 +5856,7 @@ form#vacance-call select{
 
 .qview__link-btn--static .small {
   font-size: 12px;
+  line-height: 14px;
 }
 
 .qview__link-btn:hover {
