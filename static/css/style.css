@@ -3791,8 +3791,12 @@ h1.constructor{
 .top-container .eye {
     width: 20px;
     height: 20px;
-    opacity: 0;
     transition: all 0.2s ease;
+}
+
+.product .top-container .heart,
+.product .top-container .eye {
+  opacity: 0;
 }
 
 .product:hover .top-container .heart,
