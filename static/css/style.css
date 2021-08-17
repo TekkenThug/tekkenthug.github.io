@@ -3784,11 +3784,6 @@ h1.constructor{
     transition: all 0.2s ease;
 }
 
-.top-container .eye {
-  width: 24px;
-  height: 20px;
-}
-
 .product:hover .top-container .heart,
 .product:hover .top-container .eye,
 .heart.active {
