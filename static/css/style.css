@@ -3799,6 +3799,14 @@ h1.constructor{
     transition: all 0.2s ease;
 }
 
+.top-container .heart svg path:not(.hrt) {
+  stroke: #fff;
+}
+
+.top-container .heart.active svg path:not(.hrt) {
+  stroke: #DD4D51;
+}
+
 .top-container .heart svg path,
 .top-container .eye svg path {
     fill: #f4f4f4;
