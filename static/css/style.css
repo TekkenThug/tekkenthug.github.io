@@ -5773,6 +5773,10 @@ form#vacance-call select{
     flex-grow: 1;
 }
 
+.qview__slider-wrapper {
+  position: relative;
+}
+
 .qview__field--total {
     padding-top: 10px;
     align-items: center;
@@ -5869,5 +5873,5 @@ form#vacance-call select{
 
 .qview__block--static .social__btns-container {
   justify-content: center;
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
