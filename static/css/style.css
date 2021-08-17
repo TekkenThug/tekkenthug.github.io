@@ -3797,6 +3797,7 @@ h1.constructor{
 
 .top-container .heart svg path {
     transition: all 0.2s ease;
+    fill: transparent;
 }
 
 .top-container .heart svg path:not(.hrt) {
