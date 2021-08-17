@@ -5824,14 +5824,14 @@ form#vacance-call select{
     background-color: transparent;
     text-align: center;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
     color: #000;
     padding: 8px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-  border: 2px solid #DD4D51;
+    flex-direction: column;
 }
 
 .qview__link-btn--product {
