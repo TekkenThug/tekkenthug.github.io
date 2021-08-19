@@ -3801,6 +3801,7 @@ h1.constructor{
 
 .product:hover .top-container .heart,
 .product:hover .top-container .eye,
+.qview__slider:hover .top-container .heart,
 .heart.active {
   opacity: 1;
 }
