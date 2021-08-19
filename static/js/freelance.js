@@ -173,6 +173,6 @@ $(function () {
 
     /* Close btn for Quick view */
     $('.qview__close').on('click', function () {
-       $('.qview').hide();
+       $('.qview').bPopup().close();
     });
 })
