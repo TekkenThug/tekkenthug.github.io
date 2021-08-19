@@ -132,7 +132,7 @@ $(function () {
         event.preventDefault();
    
         const target = $(this);
-        const messageContainer = target.parents('.product').find('.heart-msg');
+        const messageContainer = target.parent().find('.heart-msg');
         
         if (target.hasClass('active')) {
             target.removeClass('active')
