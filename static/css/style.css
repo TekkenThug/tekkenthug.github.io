@@ -3748,14 +3748,14 @@ h1.constructor{
     visibility: hidden;
     color: #fff;
     font-weight: 500;
-    padding: 10px;
-    font-size: 16px;
+    padding: 5px 10px;
+    font-size: 12px;
     position: absolute;
     background-color: #dd4d51;
     text-align: center;
     z-index: 20;
-    right: 20px;
-    top: 0;
+    right: 0;
+    top: 30px;
     line-height: 18px;
     transition: all 0.2s ease;
     max-width: 200px;
