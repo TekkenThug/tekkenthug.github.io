@@ -174,7 +174,9 @@ $(function () {
     /* Calculate total price in quick view */
 
 
-    $('.qview__field-input input[type=number]').on('change', changePrice(e));
+    $('.qview__field-input input[type=number]').on('change', function (event) {
+        changePrice(event);
+    });
 
     function changePrice(input) {
         const inputValue = input.target.val();
@@ -182,6 +184,8 @@ $(function () {
         const resultField = $('.qview__field-input .qview__field-order .qview__field-price b');
 
         resultField.html(`${Math.floor(inputValue * price)}`);
+
+        console.log(inputValue, price, resultField)
     }
 
     /* Close btn for Quick view */
