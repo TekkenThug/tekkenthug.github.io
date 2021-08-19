@@ -3754,7 +3754,7 @@ h1.constructor{
     background-color: #dd4d51;
     text-align: center;
     z-index: 20;
-    left: 0;
+    right: 20px;
     top: 0;
     line-height: 18px;
     transition: all 0.2s ease;
