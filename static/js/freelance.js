@@ -171,6 +171,19 @@ $(function () {
         });
     });
 
+    /* Calculate total price in quick view */
+
+
+    $('.qview__field-input input[type=number]').on('change', changePrice(e));
+
+    function changePrice(input) {
+        const inputValue = input.target.val();
+        const price = $('.qview__field-value.price-per-unit').attr('data-price');
+        const resultField = $('.qview__field-input .qview__field-order .qview__field-price b');
+
+        resultField.html(`${Math.floor(inputValue * price)}`);
+    }
+
     /* Close btn for Quick view */
     $('.qview__close').on('click', function () {
        $('.qview').bPopup().close();
