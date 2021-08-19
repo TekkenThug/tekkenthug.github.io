@@ -172,14 +172,15 @@ $(function () {
     });
 
     /* Calculate total price in quick view */
+    var countingInput = $('.qview__field-input input[type=number]');
 
-
-    $('.qview__field-input input[type=number]').on('change', function (event) {
-        changePrice(event);
+    changePrice();
+    countingInput.on('change', function () {
+        changePrice();
     });
 
-    function changePrice(input) {
-        const inputValue = input.target.val();
+    function changePrice() {
+        const inputValue = countingInput.val();
         const price = $('.qview__field-value.price-per-unit').attr('data-price');
         const resultField = $('.qview__field-input .qview__field-order .qview__field-price b');
 
