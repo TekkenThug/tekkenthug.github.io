@@ -182,7 +182,7 @@ $(function () {
     function changePrice() {
         const inputValue = +countingInput.val();
         const price = +$('.qview__field-value.price-per-unit').attr('data-price');
-        const resultField = $('.qview__field-input .qview__field-order .qview__field-price b');
+        const resultField = $('.qview__field-order .qview__field-price b');
 
         resultField.text(`хуй`);
 
