@@ -3794,8 +3794,8 @@ h1.constructor{
     transition: all 0.2s ease;
 }
 
-.product .top-container .heart,
-.product .top-container .eye {
+.top-container .heart,
+.top-container .eye {
   opacity: 0;
 }
 
