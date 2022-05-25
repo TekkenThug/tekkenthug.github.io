@@ -11,7 +11,7 @@ export default {
     titleTemplate: 'DavaiSxodimMsk',
     title: 'some-site',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
